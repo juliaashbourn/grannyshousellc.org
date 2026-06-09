@@ -1,128 +1,229 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HUNANIMA - Machines Agricoles Simples</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      color: #333;
-    }
-    header {
-      background-color: #2e7d32; /* Vert foncé */
-      color: #fdd835; /* Jaune vif */
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.2em;
-    }
-    nav {
-      background-color: #fdd835;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #2e7d32;
-    }
-    .hero {
-      background: url('https://i.pinimg.com/550x/a9/df/51/a9df5172829f8c05f5b92f97553d41ae.jpg') no-repeat center center/cover;
-      height: 350px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
-      font-size: 2em;
-    }
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-    section h2 {
-      color: #2e7d32;
-      margin-bottom: 20px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .gallery img {
-      width: 280px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    footer {
-      background-color: #2e7d32;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    footer p {
-      margin: 5px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granny's Fun House LLC | Next-Gen Family Entertainment & Interactive Play Spaces</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #0b071e; color: #f8fafc; font-family: 'Syne', sans-serif; overflow-x: hidden; }
+        .font-mono-play { font-family: 'Space Mono', monospace; }
+        
+        /* Electric Neon Pink & Velvet Night Palette */
+        .text-neon-pink { color: #ff007f; }
+        .bg-neon-pink { background-color: #ff007f; }
+        .border-neon-pink { border-color: #ff007f; }
+        
+        /* Creative Grid Matrix Layout */
+        .play-matrix {
+            background-image: linear-gradient(to right, rgba(255, 0, 127, 0.006) 1px, transparent 1px);
+            background-size: 150px 100%;
+        }
+        
+        /* Deep Scroll Fluid Transitions */
+        .reveal { transition: all 1.4s cubic-bezier(0.16, 1, 0.3, 1); opacity: 0; transform: translateY(60px); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        /* Custom Neon Fluid Scrollbar */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #0b071e; }
+        ::-webkit-scrollbar-thumb { background: #ff007f; }
+
+        .btn-neon-trigger {
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-neon-trigger:hover {
+            background-color: #ff007f;
+            color: #0b071e;
+            box-shadow: 0 0 35px rgba(255, 0, 127, 0.5);
+        }
+    </style>
 </head>
-<body>
+<body class="antialiased play-matrix">
 
-  <header>
-    <h1>HUNANIMA</h1>
-    <p>Machines Agricoles Simples et Fiables</p>
-  </header>
+    <!-- Vertical Structural Guide Line -->
+    <div class="fixed top-0 left-8 md:left-24 w-[1px] h-full bg-purple-950/20 pointer-events-none z-0"></div>
 
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <!-- Minimal High-Contrast Navigation -->
+    <nav class="fixed w-full z-50 py-6 px-6 md:px-24 bg-[#0b071e]/90 backdrop-blur-md border-b border-purple-950/30">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="font-extrabold text-xl md:text-2xl tracking-tight uppercase">
+                GRANNY'S <span class="text-neon-pink font-light font-mono-play text-xs tracking-widest block md:inline md:ml-1">// FUN HOUSE</span>
+            </div>
+            <div class="hidden lg:flex items-center space-x-12 font-mono-play text-xs tracking-widest uppercase text-purple-300">
+                <a href="#entertainment-vectors" class="hover:text-neon-pink transition">// 01. THE_SPACES</a>
+                <a href="#corporate-registry" class="hover:text-neon-pink transition">// 02. STATION_LOG</a>
+                <a href="#intake-terminal" class="hover:text-neon-pink transition">// 03. GATEWAY</a>
+            </div>
+        </div>
+    </nav>
 
-  <div class="hero">
-    <p>Votre partenaire pour des machines agricoles durables</p>
-  </div>
+    <!-- Stage 1: The Creative Opening Gateway (Hero) -->
+    <section class="min-h-screen flex items-center justify-center relative px-6 md:px-24 z-10 pt-24">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center w-full">
+            <div class="lg:col-span-7">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-neon-pink/5 border border-neon-pink/20 mb-8">
+                    <span class="w-1.5 h-1.5 bg-neon-pink animate-pulse rounded-full"></span>
+                    <span class="text-neon-pink font-mono-play text-[10px] tracking-[0.3em] uppercase">ZONE STATUS: FULL IMAGINATION</span>
+                </div>
+                <h1 class="text-5xl md:text-8xl font-black text-white leading-[0.95] uppercase tracking-tighter mb-8">
+                    UNLEASH <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-purple-400">PURE JOY.</span>
+                </h1>
+                <p class="text-purple-200/60 text-sm md:text-base max-w-xl leading-relaxed mb-12 font-light">
+                    Granny's Fun House LLC architects premium family entertainment installations, builds high-safety interactive play spaces, and hosts immersive childhood creation environments.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-5">
+                    <a href="#entertainment-vectors" class="border border-neon-pink text-white font-mono-play text-xs tracking-widest uppercase px-10 py-5 btn-neon-trigger text-center">Enter The Play Grid</a>
+                    <a href="tel:17623954306" class="bg-purple-950/40 text-purple-200 font-mono-play text-xs px-10 py-5 hover:text-white transition duration-300 text-center flex items-center justify-center gap-2 border border-purple-900/40">
+                        +1 (762) 395-4306
+                    </a>
+                </div>
+            </div>
+            
+            <!-- High-Energy Interactive Entertainment Space Imagery -->
+            <div class="lg:col-span-5 relative h-[45vh] lg:h-[65vh] w-full bg-purple-950/20 p-1 border border-purple-900/30">
+                <div class="w-full h-full relative overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1519750157634-b6d493a0f77c?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover grayscale brightness-90 contrast-125 group-hover:grayscale-0 transition duration-700" alt="Modern Creative Kids Entertainment & Play Arena Hub">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0b071e] via-transparent to-transparent"></div>
+                </div>
+                <div class="absolute top-4 right-4 font-mono-play text-[10px] text-neon-pink bg-black px-3 py-1">// FUN_STATION_762</div>
+            </div>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>À propos de nous</h2>
-    <p>
-      Chez <strong>HUNANIMA</strong>, nous nous spécialisons dans la fabrication et la distribution de 
-      <strong>machines agricoles simples</strong> pour faciliter le travail des agriculteurs. 
-      Nos solutions combinent <em>durabilité, efficacité et innovation</em> afin de répondre aux besoins de toutes les exploitations.
-    </p>
-  </section>
+    <!-- Stage 2: Verified Corporate Hub Disclosures (Deep Scroll 1) -->
+    <section id="corporate-registry" class="py-48 px-6 md:px-24 bg-purple-950/10 border-y border-purple-950/20 relative">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-start">
+            <div class="lg:col-span-4 reveal">
+                <span class="text-neon-pink font-mono-play tracking-[0.4em] text-[10px] block mb-3">// OFFICIAL HUB REGISTRY</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-white uppercase tracking-tighter">
+                    THE STATION
+                </h2>
+            </div>
+            <div class="lg:col-span-8 reveal text-purple-200/70 text-sm md:text-base space-y-6 leading-relaxed font-light">
+                <p>
+                    According to the verified regulatory and legal data parameters extracted and integrated from the profile records of **image_0b1716.jpg**, Granny's Fun House LLC operates as an approved family entertainment and immersive leisure infrastructure establishment.
+                </p>
+                <p>
+                    The organization structuralizes next-generation play configurations, dynamic birthday events, and spatial youth safety protocols from its strategic regional fulfillment headquarters:
+                </p>
+                <div class="border-l border-neon-pink pl-6 py-2 font-mono-play text-sm text-white tracking-wide max-w-xl">
+                    <p class="text-purple-500 text-xs uppercase mb-1">// REGISTERED GEOGRAPHIC INTENSITY STATION:</p>
+                    <p class="text-base font-bold tracking-tight text-neon-pink font-sans">555 Matzen St Saint Helens, OR, 97051-2848, United States</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="gallery">
-    <h2>Nos Machines</h2>
-    <div class="gallery">
-      <img src="http://ogden_images.s3.amazonaws.com/www.motherearthnews.com/images/2014/11/22234423/Boaz-Mini-Combine-jpg.jpg" alt="Mini moissonneuse">
-      <img src="https://krs-agro.ru/products/zagotovka_kormov/elho/19/7.jpg" alt="Machine agricole">
-      <img src="https://img.mod-network.net/files/images/6218ac69d37fb/SimpleFarmSilov1000_6222.jpg" alt="Équipement agricole simple">
-    </div>
-  </section>
+    <!-- Stage 3: Play Architecture Spectrums (Deep Scroll 2) -->
+    <section id="entertainment-vectors" class="py-48 px-6 md:px-24">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-32 text-left reveal">
+                <span class="text-neon-pink font-mono-play uppercase tracking-[0.3em] text-[10px] block mb-2">// INNOVATION SPECTRUMS</span>
+                <h2 class="text-4xl md:text-6xl font-bold text-white uppercase tracking-tighter">THE ENTERTAINMENT NODES</h2>
+            </div>
 
-  <section id="contact">
-    <h2>Contactez-nous</h2>
-    <p><strong>Email :</strong> admin@tyusex.shop</p>
-    <p><strong>Téléphone :</strong> +33 7 38 50 26 36</p>
-    <p><strong>Adresse :</strong> Avenue Baratier, Montmorency, 95160, France</p>
-  </section>
+            <!-- Absolute Flat Flow Layout - Zero Closed Boxes -->
+            <div class="grid lg:grid-cols-2 gap-24">
+                <!-- Node 1 -->
+                <div class="reveal group">
+                    <div class="overflow-hidden mb-8 h-96 bg-purple-950/20 border border-purple-900/30">
+                        <img src="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover filter grayscale contrast-125 brightness-90 group-hover:grayscale-0 transition duration-500" alt="Creative Childhood Learning & Dynamic Play Experience">
+                    </div>
+                    <span class="text-neon-pink font-mono-play text-xs block mb-2">// INFRASTRUCTURE SPECTRUM .01</span>
+                    <h3 class="text-2xl font-bold text-white uppercase mb-3">Immersive Play Landscapes</h3>
+                    <p class="text-purple-400/60 text-xs leading-relaxed font-light">Building physical movement courses and architectural obstacle grids optimized for spatial skill development and absolute sensory safety.</p>
+                </div>
 
-  <footer>
-    <p>&copy; 2025 HUNANIMA - Tous droits réservés.</p>
-  </footer>
+                <!-- Node 2 -->
+                <div class="reveal group lg:translate-y-24">
+                    <div class="overflow-hidden mb-8 h-96 bg-purple-950/20 border border-purple-900/30">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover filter grayscale contrast-125 brightness-90 group-hover:grayscale-0 transition duration-500" alt="Dynamic Tech and Event Celebration Environment">
+                    </div>
+                    <span class="text-neon-pink font-mono-play text-xs block mb-2">// INFRASTRUCTURE SPECTRUM .02</span>
+                    <h3 class="text-2xl font-bold text-white uppercase mb-3">Sovereign Celebration Zones</h3>
+                    <p class="text-purple-400/60 text-xs leading-relaxed font-light">Customizing high-energy birthday environments and corporate family assemblies equipped with state-of-the-art sensory soundscapes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Stage 4: Monolithic Playground Axiom (Deep Scroll 3) -->
+    <section class="py-44 relative overflow-hidden bg-black/40 border-y border-purple-950/40">
+        <div class="max-w-5xl mx-auto text-center px-6 reveal">
+            <span class="text-neon-pink font-mono-play text-xs tracking-[0.4em] uppercase block mb-4">// THE CORE PLAY MANIFESTO</span>
+            <h3 class="text-3xl md:text-5xl text-white font-bold uppercase tracking-tighter leading-tight">
+                "CREATIVITY IS NOT AN ACCIDENT. IT IS THE PRODUCT OF BOLD PHYSICAL SPACES DESIGNED FOR SAFE, UNBOUNDED FREEDOM."
+            </h3>
+        </div>
+    </section>
+
+    <!-- Stage 5: Systematic Play Architecture Pipeline (Deep Scroll 4) -->
+    <section class="py-48 px-6 md:px-24 bg-black/60">
+        <div class="max-w-4xl mx-auto reveal text-center">
+            <span class="text-neon-pink font-mono-play text-xs tracking-widest block mb-4">// EXECUTION LIFECYCLE</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white uppercase tracking-tighter">THE ENTERTAINMENT DESIGN MAP</h2>
+            
+            <div class="space-y-12 text-left mt-20 max-w-2xl mx-auto">
+                <div class="border-b border-purple-900/30 pb-8">
+                    <h4 class="text-neon-pink font-mono-play text-xs mb-2">PHASE 01 // ANTI-IMPACT SAFETY GRIDDING</h4>
+                    <p class="text-purple-400/60 text-xs font-light leading-relaxed">Testing all facility assets under strict protective structural calculations to ensure pristine collision resilience.</p>
+                </div>
+                <div class="border-b border-purple-900/30 pb-8">
+                    <h4 class="text-white font-mono-play text-xs mb-2">PHASE 02 // COGNITIVE ENGAGEMENT PLACEMENT</h4>
+                    <p class="text-purple-400/60 text-xs font-light leading-relaxed">Distributing games, active zones, and learning modules to drive balanced movement patterns across the floor layout.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-mono-play text-xs mb-2">PHASE 03 // FULL ENERGY FLUID CAPACITY</h4>
+                    <p class="text-purple-400/60 text-xs font-light leading-relaxed">Opening up the spaces under experienced group supervision frameworks to keep coordination levels high and energy flowing safely.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stage 6: Secure Core Intake Gateway Footer (Deep Scroll 5) -->
+    <footer id="intake-terminal" class="py-32 px-6 md:px-24 bg-black border-t-2 border-neon-pink relative z-10">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-5xl md:text-7xl font-black mb-12 text-white tracking-tighter uppercase">ACCESS HUB</h2>
+                <div class="space-y-12">
+                    <div>
+                        <span class="text-purple-900 font-mono-play text-[10px] tracking-widest block mb-1 uppercase">// INTAKE COMMUNICATIONS PIPE</span>
+                        <a href="mailto:contact@grannyshousellc.org" class="text-xl md:text-2xl font-bold text-neon-pink hover:text-white transition tracking-tight font-mono-play break-all">contact@grannyshousellc.org</a>
+                    </div>
+                    <div>
+                        <span class="text-purple-900 font-mono-play text-[10px] tracking-widest block mb-1 uppercase">// VOICE COMMUNICATOR INTERFACE</span>
+                        <a href="tel:17623954306" class="text-xl md:text-2xl font-bold text-white hover:text-neon-pink transition tracking-tight font-mono-play">+1 (762) 395-4306</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:text-right flex flex-col justify-end items-start lg:items-end mt-12 lg:mt-0">
+                <span class="text-purple-900 font-mono-play text-[10px] tracking-widest block mb-2 uppercase">// PHYSICAL TERMINAL COORDINATES</span>
+                <p class="text-xl text-purple-400 tracking-tight uppercase font-light leading-tight">
+                    555 Matzen St Saint<br>
+                    Helens, OR, 97051-2848<br>
+                    United States
+                </p>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto mt-28 pt-8 border-t border-purple-950/40 flex flex-col md:flex-row justify-between text-[10px] text-purple-600 uppercase tracking-widest font-mono-play">
+            <p>&copy; 2026 GRANNY'S FUN HOUSE LLC. CREATIVE ENERGY REGULATED.</p>
+            <p>OREGON STATION // USA</p>
+        </div>
+    </footer>
+
+    <!-- Intersection Observer Script for Smooth Fluid Transitions -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.05 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
